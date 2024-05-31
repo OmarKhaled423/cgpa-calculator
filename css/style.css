@@ -172,10 +172,7 @@ h1 {
 }
 
 .middle-part {
-    background-color: #000000;
     margin-top: 20px;
-
-
 }
 
 .table__section {
@@ -199,7 +196,7 @@ h1 {
 
 @media (max-width: 992px) {
     html {
-        font-size: 80%;
+        font-size: 85%;
     }
 
     .table__section {
@@ -208,26 +205,9 @@ h1 {
         border-radius: 0px !important;
     }
 
-    /* .card-header, .card-footer {
-        padding-inline: 0.9rem;
-    }
-
-    .card-body {
-        padding: 0.6rem;
-    }
-
-    .table thead tr th {
-        padding: 13px 5px;
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    .table tbody tr td {
-        padding: 2px;
-    } */
-
-
 }
+
+
 @media (max-width: 576px) {
     html {
         font-size: 57%;
@@ -270,7 +250,6 @@ h1 {
     }
     .table thead tr th {
         padding: 1rem 0rem;
-        /* font-size: 1rem; */
         text-align: center;
     }
 
