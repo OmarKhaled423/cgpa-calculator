@@ -91,7 +91,7 @@ const cgpaCalculation = () => {
   CGPA = (earnedPoint / sumOfTotalCredit || 0).toFixed(2);
 };
 
-// check class depens on cgpa
+// check class depends on cgpa
 const classChecker = () => {
   if (CGPA >= 3.0) {
     gpaClassAlert.innerHTML = `You have got <mark class="bg bg-success">First Class</mark>`;
@@ -147,6 +147,7 @@ card.addEventListener("input", (e) => {
     bindedCalculator();
     classChecker();
     if (e.target.value) {
+      console.log(e.target.value)
       gpaClassAlert.style.opacity = "1";
     } else {
       gpaClassAlert.style.opacity = "0";
@@ -154,14 +155,10 @@ card.addEventListener("input", (e) => {
   }
 });
 
-
-
-
-
-document.getElementById("printBtn").addEventListener("click",()=>{
-// let table = document.getElementById("printTable").innerHTML
-  window.print()
-})
+document.getElementById("printBtn").addEventListener("click", () => {
+  // let table = document.getElementById("printTable").innerHTML
+  window.print();
+});
 
 // Example input values (replace with your actual input data)
 // const inputValues = ["value1", "value2", "value3"];
