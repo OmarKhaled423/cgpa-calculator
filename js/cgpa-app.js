@@ -139,7 +139,6 @@ card.addEventListener("input", (e) => {
   let isCreditField = e.target.classList.contains("credits");
 
   if (isGradePointField || isCreditField) {
-    console.log(e.target.value, isNaN(e.target.value));
     if (isNaN(e.target.value)) {
       e.target.value = "";
       return;
@@ -147,7 +146,6 @@ card.addEventListener("input", (e) => {
     bindedCalculator();
     classChecker();
     if (e.target.value) {
-      console.log(e.target.value)
       gpaClassAlert.style.opacity = "1";
     } else {
       gpaClassAlert.style.opacity = "0";
@@ -155,10 +153,9 @@ card.addEventListener("input", (e) => {
   }
 });
 
-document.getElementById("printBtn").addEventListener("click", () => {
-  // let table = document.getElementById("printTable").innerHTML
-  window.print();
-});
+// document.getElementById("printBtn").addEventListener("click", () => {
+// let table = document.getElementById("printTable").innerHTML
+// });
 
 // Example input values (replace with your actual input data)
 // const inputValues = ["value1", "value2", "value3"];
